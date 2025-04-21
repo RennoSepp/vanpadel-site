@@ -1,57 +1,155 @@
-/* css/style.css */
-
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f5f7fa;
+/* Base Reset */
+* {
     margin: 0;
     padding: 0;
-    color: #222;
+    box-sizing: border-box;
   }
   
-  .container {
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f8fa;
+    color: #333;
+  }
+  
+  .hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 3rem;
+    border-radius: 12px;
     max-width: 600px;
-    margin: 80px auto;
-    padding: 0 20px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+  }
+  
+  .overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1f3a93;
+  }
+  
+  .overlay p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #1f3a93;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #162b6f;
+  }
+  
+  .about,
+  .waitlist {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
   }
   
-  header h1 {
-    font-size: 2.4rem;
+  .about h2,
+  .waitlist h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: #1f3a93;
-    margin-bottom: 10px;
   }
   
-  header p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 40px;
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #e9f1f7;
   }
   
-  .waitlist-form input,
-  .waitlist-form button {
-    width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
+  .gallery img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  form input,
+  form button {
+    padding: 1rem;
     border-radius: 8px;
+    border: 1px solid #ccc;
     font-size: 1rem;
   }
   
-  .waitlist-form button {
+  form button {
     background-color: #1f3a93;
     color: white;
     font-weight: bold;
     cursor: pointer;
-    border: none;
+    transition: background 0.3s;
   }
   
-  .waitlist-form button:hover {
-    background-color: #182c6b;
+  form button:hover {
+    background-color: #162b6f;
   }
   
   footer {
-    margin-top: 50px;
+    background-color: #f0f3f6;
+    padding: 2rem;
+    text-align: center;
     font-size: 0.9rem;
-    color: #888;
+    color: #666;
+  }
+  
+  footer a {
+    color: #1f3a93;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery img {
+      width: 90%;
+    }
+  
+    .overlay {
+      padding: 2rem 1rem;
+    }
   }
   
