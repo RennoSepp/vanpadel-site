@@ -364,11 +364,6 @@ header.branding {
   form button {
     background-color: #1F3A93;
     color: white;
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     max-width: 250px;
@@ -377,7 +372,6 @@ header.branding {
   
   form button:hover {
     background-color: #143072;
-    box-shadow: 0 4px 14px rgba(31, 58, 147, 0.3);
   }
   
   .trust-note {
@@ -388,24 +382,35 @@ header.branding {
   
   /* Footer */
   footer {
-    background-color: #B3D4FC;
-    padding: 2rem;
     text-align: center;
+    padding: 2rem 1rem;
+    background-color: #B3D4FC;
     font-size: 0.9rem;
-    color: #666;
+    color: #555;
   }
   
   footer a {
     color: #1F3A93;
     text-decoration: none;
-    margin: 0 0.5rem;
-    font-weight: 600;
   }
   
-  footer a:hover {
-    text-decoration: underline;
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
   }
   
+  .socials a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  .socials a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
   /* Animation */
   @keyframes fadeIn {
     from {
