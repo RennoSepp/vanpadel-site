@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VanPadel is British Columbia's first modern padel club offering indoor courts, a community, and exclusive member benefits. Join us now!" />
+  <meta name="keywords" content="Padel, Padel Club, British Columbia, Sports, Indoor Courts, Community, Racquet Sports" />
+  <meta name="author" content="VanPadel" />
   <title>VanPadel – Padel is Coming to BC</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
@@ -19,50 +22,59 @@
     </nav>
   </header>
 
-  <div class="hero" style="background-image: url('img/padel-court.jpg');">
-    <div class="overlay">
-      <h1><strong>British Columbia’s First Modern Padel Club</strong></h1>
-      <p style="margin-top: 1rem; margin-bottom: 5px;">Fast-paced, social, and insanely fun — VanPadel is creating the ultimate hub for padel lovers in BC.</p>
-      <a href="#founding" class="cta-button" id="hero-button">Be the First to Play</a>
-      <p class="sub-cta">🚀 Launching Soon – Get in early!</p>
+  <section class="hero-section">
+    <div class="hero" style="background-image: url('img/padel-court.jpg');">
+      <div class="overlay">
+        <h1><strong>British Columbia’s First Modern Padel Club</strong></h1>
+        <p style="margin-top: 1rem; margin-bottom: 5px;">Fast-paced, social, and insanely fun — VanPadel is creating the ultimate hub for padel lovers in BC.</p>
+        <a href="#founding" class="cta-button" id="hero-button">Be the First to Play</a>
+        <p class="sub-cta">🚀 Launching Soon – Get in early!</p>
+      </div>
     </div>
-  </div>
-
-  <section id="about" class="about">
-    <h2>What’s Padel?</h2>
-    <p>Imagine tennis, but more social. Smaller courts, fast rallies, and walls in play. It’s the fastest-growing racquet sport in the world — and it’s about to take over British Columbia.</p>
   </section>
 
-  <section class="why-vanpadel">
-    <h2>Why VanPadel?</h2>
-    <p>We’re not just building a court—we’re building a community. Whether you're new to the game or a seasoned player, VanPadel is your home base for connection, improvement, and fun.</p>
-    <ul>
-      <li>🏟️ Indoor courts designed for year-round play</li>
-      <li>📱 App-based booking & skill matching</li>
-      <li>🌐 Play solo or find partners instantly</li>
-      <li>🎉 Weekly events, leagues, and open mixers</li>
-      <li>💬 Welcoming, inclusive community</li>
-    </ul>
-  </section>
+  <main>
+    <section class="why-vanpadel">
+      <h2>Why VanPadel?</h2>
+      <p>We’re not just building a court—we’re building a community. Whether you're new to the game or a seasoned player, VanPadel is your home base for connection, improvement, and fun.</p>
+      <ul>
+        <li>🏟️ Indoor courts designed for year-round play</li>
+        <li>📱 App-based booking & skill matching</li>
+        <li>🌐 Play solo or find partners instantly</li>
+        <li>🎉 Weekly events, leagues, and open mixers</li>
+        <li>💬 Welcoming, inclusive community</li>
+      </ul>
+    </section>
 
-  <section class="gallery">
-    <h2>The Energy of Padel</h2>
-    <p>A sport that brings people together — whether you're competitive or just here for a good time.</p>
-    <img src="img/padel-action.jpg" alt="Padel action" />
-    <img src="img/padel-friends.jpg" alt="Friends playing padel" />
-    <img src="img/padel-sunset.jpg" alt="Padel at sunset" />
-  </section>
+    <section class="gallery">
+      <div class="gallery-text">
+        <h2>The Energy of Padel</h2>
+        <p>A sport that brings people together — whether you're competitive or just here for a good time.</p>
+      </div>
+      <div class="gallery-images">
+        <img src="img/padel-action2.jpg" alt="Padel action" />
+        <img src="img/padel-friends.jpg" alt="Friends playing padel" />
+        <img src="img/padel-sunset.jpg" alt="Padel at sunset" />
+      </div>
+    </section>
 
-  <section id="founding" class="waitlist">
-    <h2>Founding Member Access</h2>
-    <p>Join the movement and unlock early access to our courts, launch events, and exclusive member perks.</p>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="location" placeholder="Where in BC are you located?" required />
-      <button type="submit">Be the First to Play</button>
-    </form>
-  </section>
+    <section id="founding" class="waitlist">
+      <h2>Founding Member Access</h2>
+      <p>Join the movement and unlock early access to our courts, launch events, and exclusive member perks.</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Your Name</label>
+        <input id="name" type="text" name="name" placeholder="Your Name" required />
+
+        <label for="email">Your Email</label>
+        <input id="email" type="email" name="email" placeholder="Your Email" required />
+
+        <label for="location">Where in BC are you located?</label>
+        <input id="location" type="text" name="location" placeholder="Where in BC are you located?" required />
+
+        <button type="submit">Be the First to Play</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 VanPadel · Designed for the next generation of racquet sport · <a href="#">@vanpadel</a></p>
